@@ -1,8 +1,8 @@
 
-name: run tests on multiple platforms
+name: run tests on demand on multiple platforms
 
 on:
-  [push, pull_request]
+  push
 
 jobs:
   build:
