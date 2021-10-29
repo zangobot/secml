@@ -14,6 +14,12 @@ jobs:
         python-version: [3.6, 3.7, 3.8, 3.9]
         os: [ubuntu-latest, macos-latest, windows-2019]
         extras: [noextras, pytorch, foolbox, cleverhans]
+        exclude:
+          - python-version: 3.8
+            extras : cleverhans
+          - python-version: 3.9
+            extras : cleverhans
+          
 
     steps:
     - uses: actions/checkout@v2
